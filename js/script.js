@@ -163,11 +163,11 @@
 
     var data = {
       access_key: key,
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value,
+      name: form.elements['name'].value,
+      email: form.elements['email'].value,
+      message: form.elements['message'].value,
       from_name: 'Portfolio Contact Form',
-      subject: 'New portfolio message from ' + form.name.value
+      subject: 'New portfolio message from ' + form.elements['name'].value
     };
 
     submitBtn.classList.add('is-loading');
